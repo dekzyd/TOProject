@@ -1,0 +1,32 @@
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+body {
+  text-align: center;
+}
+
+form {
+}
+
+select {
+  border: 2px solid #dddddd;
+  background: #eeeeee;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+select:hover,
+select:focus {
+  background: #dddddd;
+}
+
+select::picker-icon {
+  color: #999999;
+  transition: 0.4s rotate;
+}
+
+select:open::picker-icon {
+  rotate: 180deg;
+}
