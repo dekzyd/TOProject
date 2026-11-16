@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Cafe Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="brand-container">
+        <div class="brand">
+          <img src="assets/odin-lined.png" alt="Odin Cafe Logo" />
+          <h1 class="brand-name">Odin Cafe</h1>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="wrapper">
+          <p>
+            This is not a real sign-up form! behind the word mountains, far from
+            the countries Vokalia, there lives the blind texts.
+          </p>
+          <p>You <i>know</i> you want to taste them.</p>
+          <div class="form-container">
+            <p>Let's do this!</p>
+            <form method="get" action="" id="signup-form">
+              <div class="input-ctr">
+                <label for="Fname">First Name:</label>
+                <input type="text" id="Fname" name="Fname" />
+              </div>
+              <div class="input-ctr">
+                <label for="Lname">Last Name:</label>
+                <input type="text" id="Lname" name="Lname" />
+              </div>
+              <div class="input-ctr">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="input-ctr">
+                <label for="number">Phone Number</label>
+                <input type="tel" id="number" name="number" />
+              </div>
+              <div class="input-ctr">
+                <label for="password">Password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  pattern="((?=.*[A-Z])(?=.*[\W_]).{6,})"
+                />
+              </div>
+              <div class="input-ctr">
+                <label for="confirm-password">Confirm Password:</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <button type="submit" form="signup-form">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
